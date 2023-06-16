@@ -1,5 +1,7 @@
 import { postModel } from "../models/postModel.js";
+import dotenv from "dotenv";
 
+dotenv.config();
 export const getPosts = async (req, res) => {
     try {
         const posts = await postModel.find();

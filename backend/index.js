@@ -9,8 +9,7 @@ dotenv.config();
 
 const app = express();
 const PORT = process.env.PORT || 5000;
-
-const URI = `mongodb+srv://admin:${process.env.DATABASE_PASSWORD}@cluster0.vokyija.mongodb.net/?retryWrites=true&w=majority`;
+const URI = `mongodb+srv://admin:rubuXpBHYikvrive@cluster0.vokyija.mongodb.net/?retryWrites=true&w=majority`;
 
 app.use(bodyParser.json({ limit: "30mb" }));
 app.use(bodyParser.urlencoded({ extended: true, limit: "30mb" }));

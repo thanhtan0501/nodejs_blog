@@ -24,8 +24,6 @@ export const createPost = async (req, res) => {
 };
 export const updatePost = async (req, res) => {
     try {
-        // req.body là để server lấy data từ dưới client gửi lên
-        // ở đây mình sẽ lưu data lấy từ req.body vàng mảng newPost
         const updatePost = req.body;
 
         const post = await postModel.findOneAndUpdate(
